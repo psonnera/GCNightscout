@@ -3,4 +3,24 @@ Deploying a Nightscout VPS in Google Cloud with a button click
 
 How to create a button [here](https://cloud.google.com/shell/docs/open-in-cloud-shell)
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fpsonnera%2FGCNightscout&cloudshell_git_branch=main&cloudshell_open_in_editor=%2Fcomputeinstance.gsc)
+Can't do that in Markdown: need html.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open in Google Cloud Shell</title>
+</head>
+<body>
+    <button id="open-cloud-shell">Open in Cloud Shell</button>
+
+    <script>
+        document.getElementById('open-cloud-shell').addEventListener('click', () => {
+            const command = 'YOUR_COMMAND_HERE'; // Replace with your command
+
+            // Open Google Cloud Shell with the provided command
+            window.open(`https://console.cloud.google.com/cloudshell/open?shellonly=true&cloudshell_image=gcr.io/cloudshell-images/cloudshell:latest&cloudshell_tutorial=${encodeURIComponent(command)}`);
+        });
+    </script>
+</body>
+</html>
+
