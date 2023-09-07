@@ -10,18 +10,15 @@ Select your Compute Image free region.</br>
 <head>
 <title>Open in Google Cloud Shell</title>
 </head>
-<body>
 <button id="open-cloud-shell">Open in Cloud Shell</button>
+
 <script>
 document.getElementById('open-cloud-shell').addEventListener('click', () => {
 const command = './create.sh'; // Replace with your command
 window.open(`https://console.cloud.google.com/cloudshell/open?shellonly=true&cloudshell_image=gcr.io/cloudshell-images/cloudshell:latest&cloudshell_tutorial=${encodeURIComponent(command)}`);
 });
 </script>
-</body>
-
 </br>
---
 
 ## Insights
 
