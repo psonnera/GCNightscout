@@ -1,9 +1,10 @@
 # GCNightscout
 Deploying a Nightscout VPS in Google Cloud with a button click
 
-Select your Compute Image free region.</br><select name="region" id="REGION"><br/>  <option value="us-central1-a" selected="selected">us-central1 (Iowa)</option><br/>  <option value="us-west1-a">us-west1 (Oregon)</option><br/>  <option value="us-east1-a">us-east1 (South Carolina)</option><br/></select>
+Select your Compute Image free region.</br>
 
-// Thanks ChatGPT, I unsuccessfully tried to achieve this in Markdown. Well it's not possible.
+<select name="region" id="REGION"><br/>  <option value="us-central1-a" selected="selected">Iowa</option><br/>  <option value="us-west1-a">Oregon</option><br/>  <option value="us-east1-a">South Carolina</option><br/></select>
+
 <head>
     <title>Open in Google Cloud Shell</title>
 </head>
