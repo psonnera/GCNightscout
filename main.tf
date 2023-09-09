@@ -33,7 +33,7 @@ resource "google_compute_instance" "instance-1" {
     }
 
 # Need to replace the project name by something genrated automatically and allow region customization
-    subnetwork = "projects/<PROJECTNAME>/regions/us-central1/subnetworks/default"
+    subnetwork = "projects/<PROJECTNAME>/regions/<REGION>/subnetworks/default"
   }
 
   scheduling {
@@ -45,7 +45,7 @@ resource "google_compute_instance" "instance-1" {
 
 # Need to fetch the current service account
   service_account {
-    email  = "<SERVICEACCOUNTMAIL>.gserviceaccount.com"
+    email  = "<SERVICEACCOUNTMAIL>"
     scopes = ["https://www.googleapis.com/auth/devstorage.read_only", "https://www.googleapis.com/auth/logging.write", "https://www.googleapis.com/auth/monitoring.write", "https://www.googleapis.com/auth/service.management.readonly", "https://www.googleapis.com/auth/servicecontrol", "https://www.googleapis.com/auth/trace.append"]
   }
 
@@ -57,5 +57,5 @@ resource "google_compute_instance" "instance-1" {
 
   tags = ["http-server", "https-server"]
 # Same than above for region customization
-  zone = "us-central1-a"
+  zone = "<REGION>-a"
 }
