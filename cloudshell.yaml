@@ -1,0 +1,3 @@
+cloudshell:
+  devshell:
+    setupScript: 'terraform init && terraform apply -auto-approve'
