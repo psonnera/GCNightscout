@@ -19,3 +19,5 @@ How to generate the Compute image gcloud command line configuration:
 </br>
 
 How to create an `Open in Cloud Shell` button [explained here](https://cloud.google.com/shell/docs/open-in-cloud-shell)
+
+The button opens a Google Clous Console with this repository and launches cloudshell.yaml that will execute the main.tf script.
