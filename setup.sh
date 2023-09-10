@@ -7,7 +7,8 @@ SERVICE_ACCOUNT_EMAIL=$(gcloud auth list --format="value(account)")
 region="us-central1"
 
 # Let's replace default values
-sed -i "s/REGION/$region/g" cloudshell.yaml
+sed -i "s/REGION/$region/g" main.tf
+sed -i "s/SERVICEACCOUNTMAIL/$SERVICE_ACCOUNT_EMAIL/g" main.tf
 
 # We can then initialize and apply, Terraform will use all present .tf anf tf.json files
 terraform init
