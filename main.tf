@@ -33,7 +33,7 @@ resource "google_compute_instance" "nightscout" {
     }
 
 # Need to replace the project name by something genrated automatically and allow region customization
-    subnetwork = "projects/<PROJECTNAME>/regions/<REGION>/subnetworks/default"
+    subnetwork = "projects/nightscout-vps-xdrip/regions/REGION/subnetworks/default"
   }
 
   scheduling {
@@ -45,7 +45,7 @@ resource "google_compute_instance" "nightscout" {
 
 # Need to fetch the current service account
   service_account {
-    email  = "<SERVICEACCOUNTMAIL>"
+    email  = "SERVICEACCOUNTMAIL"
     scopes = ["https://www.googleapis.com/auth/devstorage.read_only", "https://www.googleapis.com/auth/logging.write", "https://www.googleapis.com/auth/monitoring.write", "https://www.googleapis.com/auth/service.management.readonly", "https://www.googleapis.com/auth/servicecontrol", "https://www.googleapis.com/auth/trace.append"]
   }
 
@@ -57,5 +57,5 @@ resource "google_compute_instance" "nightscout" {
 
   tags = ["http-server", "https-server"]
 # Same than above for region customization
-  zone = "<REGION>-a"
+  zone = "REGION-a"
 }
