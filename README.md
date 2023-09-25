@@ -3,7 +3,11 @@ Deploying a Nightscout VPS in Google Cloud with a button click
 
 Select your Compute Image free region.</br>
 
-<select name="region" id="REGION"><br/>  <option value="us-central1-a" selected="selected">Iowa</option><br/>  <option value="us-west1-a">Oregon</option><br/>  <option value="us-east1-a">South Carolina</option><br/></select>
+<select name="region" id="REGION">
+  <option value="us-central1-a" selected="selected">Iowa</option>
+  <option value="us-west1-a">Oregon</option>
+  <option value="us-east1-a">South Carolina</option>
+</select>
 
 [![Run on Google Cloud](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/psonnera/GCNightscout&cloudshell_tutorial=README.md)
 
