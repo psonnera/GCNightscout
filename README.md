@@ -3,10 +3,6 @@ Deploying a Nightscout VPS in Google Cloud with a button click
 
 [![Run on Google Cloud](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/psonnera/GCNightscout&cloudshell_tutorial=HowTo.md)
 
-[![Run on Google Cloud](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/psonnera/GCNightscout&cloudshell_tutorial=terraform/README.md)
-
-
-
 </br>
 
 ## Insights
